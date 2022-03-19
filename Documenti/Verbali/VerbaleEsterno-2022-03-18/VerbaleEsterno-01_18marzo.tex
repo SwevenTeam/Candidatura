@@ -1,0 +1,189 @@
+\newcommand{\docNome}{ Verbale Esterno del 18-03-2022 }
+\newcommand{\docVersione}{0.0.1}
+\newcommand{\docUso}{Esterno}
+\newcommand{\docDestinatari}{Gruppo Sweven Team}
+\newcommand{\docStatus}{in lavorazione}
+\newcommand{\docNomeProgetto}{} % ??
+\newcommand{\docNomeTeam}{Sweven Team}
+\newcommand{\docRedattori}{Irene Benetazzo}
+\newcommand{\docVerificatori}{Mattia Episcopo}
+\newcommand{\docApprovazione}{Pietro Macrì}
+\documentclass[12pt, a4paper,table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{pdfborder = {0 0 0}}
+\geometry{a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm}
+\title{\textsc{\docNome} \\ \textsc{\docNomeProgetto}}
+\author{}
+\date{}
+\definecolor{footer-gray}{HTML}{808080}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textcolor{footer-gray}{\docNome} }
+\lhead{\textcolor{footer-gray}{Sweven Team}}
+\fancyfoot{}
+\cfoot{\textcolor{footer-gray}{Pagina \thepage } }
+\renewcommand*\contentsname{Indice}
+
+\begin{document}
+	\maketitle
+	\vspace{-3em}
+	\begin{center}
+	\includegraphics[scale=0.50]{images/logo.jpg} \\
+	\vspace{2em}
+	\huge \textsc{\docNomeTeam}\\
+	\normalsize \href{mailto:swe7.team@gmail.com}{swe7.team@gmail.com}\\
+	\vspace{2em}
+	\begin{tabular}{r|l}
+		\multicolumn{2}{c}{ \textsc{Informazioni sul documento} } \\
+		\hline
+		\textbf{Versione}     & \docVersione\\
+		\textbf{Uso}          & \docUso\\
+        \textbf{Destinatari}  & \docDestinatari\\
+		\textbf{Stato}        & \docStatus\\
+		\textbf{Redattori}    & \docRedattori\\
+		\textbf{Verificatori} & \docVerificatori\\
+		\textbf{Approvatori} & \docApprovazione\\
+	\end{tabular}
+    \end{center}
+    \vspace{3em}
+    \begin{center}
+        \LARGE{\textbf{Sintesi}} 
+    \end{center}
+    \normalsize{Incontro informativo sul capitolato C1 proposto dall'azienda Imola Informatica}
+    \thispagestyle{empty}   
+	\newpage
+
+	\section*{Diario delle modifiche}
+	\begin{center}
+	\renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
+	\begin{tabular}{ |c|c|m{14em}|m{7em}|c| }
+	\hline
+	\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} &  \textbf{Autore} &  \textbf{Ruolo} \\
+	\hline
+    & 2022-03-XX & & & \\
+	\hline
+    & 2022-03-XX & & & \\
+	\hline
+	0.0.1 & 2022-03-19 & Redazione del documento & Irene \newline Benetazzo & Redattore\\
+	\hline
+	\end{tabular}
+	\end{center}
+	\newpage
+
+	\tableofcontents
+	\newpage
+
+	\section{Informazioni}
+	\begin{itemize}
+		\item \textbf{Data}: 2022-03-18
+		\item \textbf{Orario}: 11:00 - 11:45
+		\item \textbf{Luogo}: Meeting Zoom
+		\item \textbf{Partecipanti}:
+		\begin{itemize}
+			\item Irene Benetazzo
+			\item Tommaso Berlaffa
+			\item Mattia Episcopo
+			\item Pietro Macrì
+			\item Qi Fan Andrea Pan
+			\item Matteo Pillon
+			\item Samuele Rizzato
+			\item Lorenzo Giacomo (Imola)
+            \item Patera Lorenzo (Imola)
+            \item Proscia Alessandro (Imola)            
+		\end{itemize}
+        \item \textbf{Assenti}: Nessuno
+	\end{itemize}
+	\section{Ordine del giorno}
+	\begin{enumerate}
+		\item L'applicazione in generale
+		\item Scelte tecnologiche per sviluppare l'applicazione
+		\item Sistema di login aziendale LDPA
+		\item Informazioni sull'applicazione web aziendale EMT
+		\item Supporto e disponibilità dell'azienda
+		\item Confronto all'interno del gruppo
+	\end{enumerate}
+	\newpage
+
+	\section{Svolgimento}
+		\subsection{L'applicazione in generale}
+		Il gruppo inizia chiedendo se l'azienda si attende un'applicazione principalmente 
+		per pc o per dispositivi mobili, e se per il lato client si desidera un app nativa 
+		o è possibile intefacciarsi con le comuni app di messaggistica. \newline
+		L'azienda spiega che la richiesta è di una Web App e poi consiglia l'aggiunta di una 
+		web view per adattarla facilmente anche ai dispositivi mobili. Il lavoro è principalmente 
+		nel lato server dell'applicazione; il lato client non è espressamente richiesto e si è 
+		completamente liberi di creare una propria interfaccia o di intefacciarsi con un app di 
+		messaggistica. Ad esempio interagire tramite le API con Telegram che offre già tutte 
+		le varie versioni desktop e mobile.\newline
+        Viene posta la domanda riguardante l'input, l'azienda comunica che l'input vocale 
+		è facoltativo, mentre per l'input testuale si immagina perlopiù un botta e risposta, 
+		da considerare anche il caso di un unico messaggio completo di tutte le informazioni necessarie.\newline
+		Il gruppo chiede riguardo le richieste opzionali se ci sono preferenze, l'azienda invita 
+		prima a partire dalle richieste obbligatorie, in particolare la parte di consuntivazione, 
+		e poi per le richieste opzionali non hanno preferenze.
+		L'azienda invita a realizzare un'applicazione in cui la struttura e l'interazione siano
+		separate e si interagisca con dei sistemi esterni.
+		
+        \subsection{Scelte tecnologiche per sviluppare l'applicazione}
+        L'azienda lascia completamente libero il gruppo di scegliere le tecnologie, tuttavia 
+        consigliano Phyton lato server per le numerose librerie che offre a riguardo, 
+		ad esempio \href{https://chatterbot.readthedocs.io/en/stable/}{ChatterBot}
+
+		\subsection{Sistema di login aziendale LDPA}
+		I referenti di Imola spiegano al gruppo che il sistema di login aziendale è strutturato ad albero 
+		per unità organizzative, all'interno ci sono i gruppi e poi gli utenti a cui sono stati assegnati degli attributi. 
+		Per la sicurezza non si fa mai un collegamento diretto e non si richiedono mai direttamente le credenziali
+		ma vengono esposte una serie di APIRest e verranno autenticate tramite un token. 
+		Cioè tramite API si richiedono delle credenziali da usare per il ChatBot e come risposta si avrà 
+		una stringa contenente tutte le informazioni. Suggeriscono il sito 
+		\href{https://www.redhat.com/it/topics/api/what-is-a-rest-api}{https://www.redhat.com/it/topics/api/what-is-a-rest-api},
+		comunque maggiori informazioni verranno fornite dopo l'assegnazione dell'appalto.
+		
+		\subsection{Informazioni sull'applicazione web aziendale EMT}
+		L'azienda mostra a schermo l'applicativo EMT attualmente in uso facendo vedere l'esempio di form 
+		da compilare per poter consuntivare le ore di lavoro. Quindi tramite il ChatBot lo scopo è riuscire 
+		ad ottenere le informazioni necessarie, validando i vari messaggi e in caso di ambiguità va chiesta
+		chiarezza all'utente.
+
+		\subsection{Supporto e disponibilità dell'azienda}
+		Per eseguire i test l'azienda invita ad usare le varie convenzioni disponibili per studenti 
+		(ad esempio il pacchetto studenti di GitHub), comunuque in caso di difficoltà o necessità 
+		l'azienda è disposta a collaborare per trovare una soluzione.
+		I tre referenti presenti, si mostrano fin da subito molto disponibili e forniscono
+		anche i loro contatti Telegram. \newline
+		Suggeriscono durante la fase di progettazione e sviluppo di mantenere il più possibile 
+		la semplicità, ricordando che si fa sempre in tempo ad aggiungere funzionalità, ad abbellire 
+		ma in primis è importante che sia funzionante. Inoltre sottolineano che per  il gruppo è in primis 
+		un'esperienza formativa, quindi invitano a non esitare a contattarli in caso di dubbi e difficoltà. 
+		Infine consigliano al gruppo di partire da una PoC basata su tecnologie classiche.
+		\subsection{Confronto all'interno del gruppo}
+		Alle 11.35 termina la riunione con l'azienda Imola e il gruppo Sweven rimane in chiamata Zoom
+		per confrontarsi sulle informazioni appena ricevute. \newline
+		Tutti i membri del gruppo si reputano soddisfatti del colloquio per le delucidazioni ricevute 
+		che hanno sciolto le domande sorte durante la lettura del pdf di presentazione del capitolato,
+		in particolare non si era colto che la richiesta principale è il lato server dell'applicazione.
+		L'azienda lascia si molta libertà, che può essere un'arma a doppio taglio, ma comunque hanno 
+		fornito suggerimenti come l'utilizzo il linguaggio Phyton, di usare le APIRest per interagire.
+		Inoltre il gruppo è rimasto colpito positivamente dall'azienda avendo un'ottima impressione e
+		in particolare dalla disponibilità mostrata.
+	
+		\section{Conclusioni}
+	Il gruppo approva all'unanimità la scelta del capitolato C1 con l'azienda Imola Informatica.
+	\newpage
+	
+	\section*{Tracciamento delle decisioni}
+	\renewcommand{\arraystretch}{2} %aumento ampiezza righe
+	\begin{tabular}{ |m{8em}|m{30em}| }
+		\hline
+		\textbf{Codice} & \textbf{Descrizione} \\
+		\hline
+		VE\_2022-03-14.1 & Approvazione del capitolato C1 \\
+		\hline
+	\end{tabular}
+\end{document}
