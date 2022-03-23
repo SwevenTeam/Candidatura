@@ -1,8 +1,8 @@
 \newcommand{\docNome}{ Verbale Interno del  }   % INSERIRE LA DATA IN FORMATO aaaa-mm-gg
 \newcommand{\docVersione}{}                     % INSERIRE VERSIONE IN FORMATO x.y.z
-\newcommand{\docStatus}{in lavorazione}         % AGGIORNARE SOLO QUANDO CONFERMATO
+\newcommand{\docStatus}{in lavorazione}         % AGGIORNARE SOLO QUANDO APPROVATO
 \newcommand{\docUso}{}                          % INTERNO O ESTERNO
-\newcommand{\docNomeProgetto}{}
+\newcommand{\docDestinatari}{Gruppo Sweven Team} %Se verbale esterno togliere questo comando (verranno inseriti direttamente come testo) 
 \newcommand{\docNomeTeam}{Sweven Team}
 \newcommand{\docRedattori}{}                    % REDATTORE
 \newcommand{\docVerificatori}{}                 % VERIFICATORE
@@ -19,7 +19,7 @@
 pdfborder = {0 0 0}
 }
 \geometry{a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm}
-\title{\textsc{\docNome} \\ \textsc{\docNomeProgetto}}
+\title{\textsc{\docNome}}
 \author{}
 \date{}
 \definecolor{footer-gray}{HTML}{808080}
@@ -44,27 +44,33 @@ pdfborder = {0 0 0}
 		\hline
 		\textbf{Versione}     & \docVersione\\
 		\textbf{Uso}          & \docUso\\
+        \textbf{Destinatari}  & \docDestinatari\\ %Se verbale esterno scrivere direttamente qui la lista con anche azienda Imola Informatica e professori
 		\textbf{Stato}        & \docStatus\\
 		\textbf{Redattori}    & \docRedattori\\
 		\textbf{Verificatori} & \docVerificatori\\
 		\textbf{Approvatori} & \docApprovazione\\
 	\end{tabular}
 	\end{center}
+    \vspace{3em}
+    \begin{center}
+        \LARGE{\textbf{Sintesi}} 
+    \end{center}
+    \normalsize{Scrivere qui la sintesi del documento}
 	\thispagestyle{empty}   
 	\newpage
 	
 	\section*{Diario delle modifiche}
 	\begin{center}
 	\renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
-	\begin{tabular}{ |c|c|m{14em}|m{7em}|c| }
+	\begin{tabular}{ |c|c|m{12em}|m{7em}|c| }
 	\hline
 	\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} &  \textbf{Autore} &  \textbf{Ruolo} \\
 	\hline
-	1.0.0 & aaaa-mm-gg &  & \docApprovazione & Approvatore\\ % Se il nome approvatore non ci sta, metterlo a mano con aggiunta di \newline (esempio: Nome \newline Cognome)
+	1.0.0 & aaaa-mm-gg &  & \docApprovazione & Responsabile\\ % Se il nome dell'approvatore non ci sta, metterlo a mano con aggiunta di \newline (esempio: Nome \newline Cognome)
 	\hline
 	0.1.0 & aaaa-mm-gg &  & \docVerificatori & Verificatore\\ % Stesso discorso di prima
 	\hline
-    0.0.1 & aaaa-mm-gg &  & \docRedattori & Redattore\\  % Stesso discorso di prima
+    0.0.1 & aaaa-mm-gg &  & \docRedattori & Amministratore\\  % Stesso discorso di prima
 	\hline
 	\end{tabular}
 	\end{center}
@@ -113,8 +119,8 @@ pdfborder = {0 0 0}
 		\hline
 		\textbf{Codice} & \textbf{Descrizione} \\
 		\hline
-		VI\_aaaa-mm-gg.1 & RIEMPIRE QUI SE VERBALE INTERNO\\ \hline
-		VE\_aaaa-mm-gg.1 & RIEMPIRE QUI SE VERBALE ESTERNO\\ \hline
-		% Inserire qui nuovi cambiamenti
+		VI\_aaaa-mm-gg.1 & Riempire qui se verbale interno\\ \hline
+		VE\_aaaa-mm-gg.1 & Riempire qui se verbale esterno\\ \hline
+		% Inserire altre righe per nuovi cambiamenti
 	\end{tabular}
 \end{document}
