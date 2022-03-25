@@ -1,12 +1,39 @@
 \section{Capitolato C3}
-		\begin{itemize}
-			\item \textbf{Nome:} \textit{CC4D}: web app di rilevazione conformità;
-			\item \textbf{Proponente}: SanMarco Informatica;
-			\item \textbf{Committenti}: \textit{Prof. Tullio Vardanega} e \textit{Prof. Riccardo Cardin}.
-		\end{itemize}
-		\subsection{Descrizione del capitolato}
-		\subsection{Finalità del progetto}
-		\subsection{Tecnologie interessate}
-		\subsection{Aspetti positivi}
-		\subsection{Criticità}
-		\subsection{Valutazione finale}
+	\begin{itemize}
+		\item \textbf{Nome}: \textit{CC4D}: web app di rilevazione conformità;
+		\item \textbf{Proponente}: SanMarco Informatica;
+		\item \textbf{Committenti}: \textit{Prof. Tullio Vardanega} e \textit{Prof. Riccardo Cardin}.
+	\end{itemize}
+	\subsection{Descrizione del capitolato}
+	Il progetto mira a costruire un'applicazione web che configuri e in seguito visualizzi le carte di controllo (G) delle macchine di un sistema produttivo. Le misurazioni delle carte di controllo sono rilevate e processate da un motore interno che valuta ogni misurazione a seconda dei parametri della configurazione iniziale.
+	L'applicativo si suddivide in 4 parti, di seguito spiegate:
+	\begin{itemize}
+		\item \textbf{web application config}: creare una web application che permetta ad un utente di configurare le macchine del processo con le relative caratteristiche, per ogni caratteristica dev'essere possibile inserire i parametri (media, limiti di controllo) oppure sarà il "motore" che le calcolerà automaticamente relativamente alle ultime N misurazioni
+		\item \textbf{API dati}: creare un API che inserisca in un database le misurazioni relative alle caratteristiche delle macchine configurate dall'utente nella web application
+		\item \textbf{calculation engine}: creare un motore di calcolo che per ogni misurazione ricevuta la metta in relazione con le precedenti, delle corrette caratteristiche, e la "valuti" per capire se c'è un anomalia o se il processo rimane "in controllo".
+		\item \textbf{web application}: creare una web application che permetta all'utente di consultare le caratteristiche configurate per la macchina desiderata e controllare così lo stato del processo per la macchina.
+	\end{itemize}
+	\subsection{Finalità del progetto}
+	L'obiettivo del progetto è quello di mantenere il controllo su un processo produttivo, monitorando costantemente lo stato del processo stesso, mantenendolo in uno stato di "controllo". Le finalità sono, identificare le cause di variabilità nella produzione, diminuire gli "scarti" e continuare costantemente il miglioramento del processo stesso.
+	\subsection{Tecnologie interessate}
+	Il proponente lascia libera scelta sulle tecnologie da utilizzare, consigliandone però alcune, come spiegato di seguito:
+	\begin{itemize}
+		\item \textbf{DB Sql o NoSql}: si possono usare entrambi i tipi di database, nel quale si va a memorizzare le configurazioni iniziali dell'utente;
+		\item \textbf{time-series DB}: sono database particolari che permettono di gestire serie di dati con un ordine temporale. Da usare per la storcizzazione di tutte le misure rilevate della API;
+		\item \textbf{API rest o graphQL}: usati per rilevare le varie misurazioni dalle macchine e trasmetterle al motore dell'applicazione;
+		\item \textbf{Java o nodeJS}: per il codice che rigurada il motore dell'applicazione;
+		\item \textbf{Angular o React o Vue}: per il codice della web application che espone i dati all'utente;
+		\item \textbf{d3js}: è una libreria javascript per manipolare dati organizzati. Da usare per i grafici contenuti nella web application;
+	\end{itemize}
+	\subsection{Aspetti positivi}
+	\begin{itemize}
+		\item chiarezza e buona rappresentazione dell'applicativo già nel capitolato;
+		\item molto apprezzato perchè può essere di grande aiuto nella realtà aziendale;
+	\end{itemize}
+	\subsection{Criticità}
+	\begin{itemize}
+		\item molto complesso con 4 parti che devo interfacciarsi tra di loro;
+		\item varie tecnologie diverse, per lo più sconosciute, da integrare nella stessa piattaforma;
+	\end{itemize}
+	\subsection{Valutazione finale}
+	Il capitolato è stato analizzato con attenzione dal gruppo, ed apprezzato per la sua teorica spendibilità nella realtà aziendale, tuttavia però la grande varietà delle tecnologie sconosciute da integrare tutte nella stessa piattaforma, ha spinto il gruppo a non scegliere questo capitolato.
