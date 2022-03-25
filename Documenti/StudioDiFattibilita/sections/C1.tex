@@ -1,0 +1,58 @@
+\section{Capitolato C1}
+\begin{itemize}
+	\item \textbf{Nome:} \textit{Bot 4 Me}: il mio nuovo collega digitale! ;
+	\item \textbf{Proponente}: Imola Informatica ;
+	\item \textbf{Committenti}: \textit{Prof. Tullio Vardanega} e \textit{Prof. Riccardo Cardin}.
+\end{itemize}
+\subsection{Descrizione del capitolato}
+Il capitolato prevede la realizzazione di un chatbot, ovvero un "collega" digitale con il quale un utente, generalmente un dipendente dell'azienda, potrà interagire per svolgere diversi compiti in maniera automatica. 
+\\Lo scopo principale del progetto consiste nel creare un tool dove dipendenti, neoassunti e non, possano trovare tutti gli strumenti aziendali necessari, aiutandoli inoltre nel loro utilizzo e semplificando alcune operazioni.
+\\Viene richiesta la possibilità da parte dell'utente di compiere 2 attività fondamentali tramite l'utilizzo del chatbot :
+\begin{itemize}
+	\item consuntivare le attività giornaliere, ovvero registrare in un apposito database l'attività lavorativa in base alla tipologia e alle ore svolte;
+	\item tracciare la propria presenza in sede.
+\end{itemize}
+\subsection{Finalità del progetto}
+Il prodotto finale consisterà in un assistente personale, disponibile su diversi tipi di dispositivi, con cui l'utente potrà interagire fornendo lo specifico task e le informazioni appropriate, permettendo così al chatbot di svolgere il compito al posto dell'utente.
+\\In modo più specifico, una singola interazione con il chatbot si svolgerà nel seguente modo :
+\begin{itemize}
+	\item tramite input, testuale o vocale, l'utente invia un comando al 
+	chatbot. L'input verrà fornito in un linguaggio naturale per l'utente;
+	\item l'input verrà inviato al server, il quale avrà il compito di interpretarlo e gestire la richiesta
+	\item nel caso in cui siano necessari ulteriori dati, il chatbot dovrà richiederli all'utente;
+	\item altrimenti, nel caso in cui i dati forniti siano sufficienti, verrà eseguita l'operazione lato server e restituita la condizione attuale della richiesta (se andata a buon fine o meno). 
+\end{itemize}
+Lato Front-end, Bot4me dovrà essere interagibile tramite PC e dispositivi mobile.
+\\La GUI, oltre alla registrazione della presenza ed alla consuntivazione, potrà permettere diverse interazioni con l'utente, quali :
+\begin{itemize}
+	\item apertura cancelli tramite protocollo \textbf{MQTT}
+	\item creazione ed apertura di nuove riunioni (\textbf{Google Meet o Zoom})
+	\item ricerca di documenti tramite \textbf{CMIS}
+	\item creazione di ticket su piattaforma \textbf{Redmine}
+\end{itemize}
+
+\subsection{Tecnologie interessate}
+Riguardo le tecnologie utilizzabili, il proponente offre totale libertà, consigliando però alcune tecnologie in particolare, poiché più adatte rispetto ad altre :
+\begin{itemize}
+	\item \textbf{Python}: linguaggio di programmazione per la parte di back-end lato server, consigliato poiché presenta librerie come \textbf{Chatterbot}, utili alla realizzazione di un chatbot
+	\item linguaggi per la realizzazione della parte di front-end che gestiscono l'interazione con l'utente : 
+	\begin{itemize}
+		\item \textbf{React}: per la versione pc, utilizza linguaggi di Mark Up (\textbf{HTML}/\textbf{CSS}) e di Programmazione (\textbf{Javascript}) per l'interazione con il chatbot tramite webApp
+		\item \textbf{WebView React} per la versione mobile, ne viene consigliato l'utilizzo per adattare facilmente la webApp a dispositivi mobile
+	\end{itemize}
+	\item \textbf{API Rest}: usate per login tramite credenziali (\textbf{LDPA}) e interazioni con l'applicativo \textbf{EMT}, utilizzato per la consuntivazione, il tracciamento delle attività e la prenotazione delle postazioni in sede 
+	\item \textbf{Azure Cloud} o \textbf{Amazon Web Services}: servizi utilizzati per la gestione lato server
+\end{itemize}
+
+\subsection{Aspetti positivi}
+Diversi sono gli aspetti positivi riscontrati dal gruppo nel progetto.
+\\In primo luogo, la \textbf{chiarezza espositiva} e la \textbf{disponibilità} fornita dal proponente, confermata dai vari consigli su quali tecnologie possano adattarsi meglio al progetto da svolgere. 
+\\A seguire, la possibilità di interfacciarsi con \textbf{nuove tecnologie} con cui diversi membri del gruppo non sono ancora familiari,come per esempio il linguaggio di programmazione Python, che risulta essere sconosciuto ma anche molto interessante. 
+\\Inoltre, la possibilità di interagire con programmi ed elementi interni ad una \textbf{realtà aziendale}, come l'applicativo EMT per le consuntivazioni. 
+\\Infine, l'idea stessa di creare un assistente testuale ha
+riscontrato un forte interesse all'interno del gruppo.
+\subsection{Criticità}
+La principale criticità consiste nell'utilizzo di tecnologie con cui buona parte del gruppo non ha ancora dimestichezza, come API Rest e il linguaggio Python.
+\subsection{Valutazione finale}
+Nel complesso, pensiamo che le criticità non siano insormontabili ed anzi, possano essere facilmente risolvibili e risultare in una ottima opportunità per migliorare ed approfondire diversi argomenti. 
+\\Dopo diversi incontri e discussioni, il gruppo decide all'unanimità di scegliere questo capitolato, poiché ritenuto il più interessante e stimolante.
