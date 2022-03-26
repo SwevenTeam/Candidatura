@@ -1,0 +1,45 @@
+\newcommand{\docNome}{ Norme di Progetto  }
+\newcommand{\docVersione}{0.0.2}                 % INSERIRE VERSIONE IN FORMATO x.y.z
+\newcommand{\docStatus}{in lavorazione}          % AGGIORNARE SOLO QUANDO APPROVATO
+\newcommand{\docUso}{Interno}
+\newcommand{\docDestinatari}{
+      Gruppo Sweven Team\\
+    & Prof. Tullio Vardanega\\
+	& Prof. Riccardo Cardin\\
+	& Azienda Imola Informatica\\
+} 
+\newcommand{\docNomeTeam}{Sweven Team}
+\newcommand{\docRedattori}{
+    Irene Benetazzo
+}
+\newcommand{\docVerificatori}{}
+\newcommand{\docApprovazione}{}
+\documentclass[12pt, a4paper,table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+pdfborder = {0 0 0}
+}
+\geometry{a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm}
+\title{\textsc{\docNome}}
+\author{}
+\date{}
+\definecolor{footer-gray}{HTML}{808080}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textcolor{footer-gray}{\docNome} }
+\lhead{\textcolor{footer-gray}{Sweven Team}}
+\fancyfoot{}
+\cfoot{\textcolor{footer-gray}{Pagina \thepage } }
+\renewcommand*\contentsname{Indice}
+
+\begin{document}
+\input{frontespizio.tex}
+\input{diario_modifiche.tex}
+\input{section/introduzione.tex}
+\end{document}
