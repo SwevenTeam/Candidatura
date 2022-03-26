@@ -1,0 +1,59 @@
+\newcommand{\docNome}{ Bozza motivazioni della scelta C1  }   % INSERIRE LA DATA IN FORMATO aaaa-mm-gg
+\newcommand{\docVersione}{}                     % INSERIRE VERSIONE IN FORMATO x.y.z
+\newcommand{\docStatus}{in lavorazione}         % AGGIORNARE SOLO QUANDO APPROVATO
+\newcommand{\docUso}{}                          % INTERNO O ESTERNO
+\newcommand{\docDestinatari}{Gruppo Sweven Team} %Se verbale esterno togliere questo comando (verranno inseriti direttamente come testo) 
+\newcommand{\docNomeTeam}{Sweven Team}
+\newcommand{\docRedattori}{}                    % REDATTORE
+\newcommand{\docVerificatori}{}                 % VERIFICATORE
+\newcommand{\docApprovazione}{}                 % APPROVATORE
+\documentclass[12pt, a4paper,table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+pdfborder = {0 0 0}
+}
+\geometry{a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm}
+\title{\textsc{\docNome}}
+\author{}
+\date{}
+\definecolor{footer-gray}{HTML}{808080}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textcolor{footer-gray}{\docNome} }
+\lhead{\textcolor{footer-gray}{Sweven Team}}
+\fancyfoot{}
+\cfoot{\textcolor{footer-gray}{Pagina \thepage } }
+\renewcommand*\contentsname{Indice}
+\begin{document}
+	\maketitle
+	\vspace{-3em}
+	\begin{center}
+	\includegraphics[scale=0.50]{images/logo.jpg} \\
+	\vspace{2em}
+	\huge \textsc{\docNomeTeam}\\
+	\normalsize \href{mailto:swe7.team@gmail.com}{swe7.team@gmail.com}\\
+	\vspace{2em}
+	\end{center}
+    \vspace{3em}
+
+	\thispagestyle{empty}   
+	\tableofcontents
+	\newpage
+
+	\section{Motivazioni della scelta}
+	Dopo una discussione dei capitolati proposti e l'incontro con Imola informatica abbiamo deciso di scegliere il capitolato C1 e di seguito sono riportate le motivazioni:
+	\begin{itemize}
+		\item \textbf{Interesse comune per lo sviluppo di un chatbot}\\ Al momento della decisione, Bot4me è stata la prima scelta di tutti i membri del gruppo in quanto ci è sembrata l'idea più stimolante per noi e utile per l'azienda.
+		\item \textbf{Nuove tecnologie}\\ Per il progetto è previsto l'uso di librerie e linguaggi che durante il percorso accademico non abbiamo affrontato. Questo capitolato, inoltre, rappresenta un'oppurtunità per arrichire le nostre conoscenze e di scoprire nuovi ambiti come quello del machine learning e lo sviluppo di applicazioni mobile.
+		\item \textbf{Libertà sulle tecnologie da impiegare}\\ Nonostante l'azienda ci abbia già dato dei consigli su cosa utilizzare, lascia a noi la decisione finale.
+		\item \textbf{Proponente aperto al confronto}\\ L'azienda si è dimostrata disponibile a chiarire eventuali dubbi e problemi fornendo, fin da subito, risorse informative e i propri contatti.
+	\end{itemize}
+\end{document}
+	
+	
