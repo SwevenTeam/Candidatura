@@ -1,0 +1,56 @@
+\newcommand{\docNome}{Studio di Fattibilità}
+\newcommand{\docVersione}{0.0.4}
+\newcommand{\docStatus}{in lavorazione}
+\newcommand{\docUso}{Esterno}                    
+\newcommand{\docDestinatari}{
+      Gruppo Sweven Team\\ 
+      & Prof. Tullio Vardanega\\
+	& Prof. Riccardo Cardin\\
+} 
+\newcommand{\docNomeTeam}{Sweven Team}
+\newcommand{\docRedattori}{
+      Mattia Episcopo\\
+      & Matteo Pillon\\
+      & Tommaso Berlaffa\\
+}
+\newcommand{\docVerificatori}{}
+\newcommand{\docApprovazione}{}
+\documentclass[12pt, a4paper,table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+pdfborder = {0 0 0}
+}
+\geometry{a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm}
+\title{\textsc{\docNome}}
+\author{}
+\date{}
+\definecolor{footer-gray}{HTML}{808080}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textcolor{footer-gray}{\docNome} }
+\lhead{\textcolor{footer-gray}{Sweven Team}}
+\fancyfoot{}
+\cfoot{\textcolor{footer-gray}{Pagina \thepage  \hspace{1pt} di \pageref*{LastPage}} }
+\renewcommand*\contentsname{Indice}
+
+\begin{document}
+\input{section/01_frontespizio.tex}
+\input{section/02_diario_modifiche.tex}
+\tableofcontents
+\newpage
+\input{section/introduzione.tex}
+\newpage
+\input{section/C1.tex}
+\newpage
+\input{section/C3.tex}
+\newpage
+\input{section/C4.tex}
+
+\end{document}
