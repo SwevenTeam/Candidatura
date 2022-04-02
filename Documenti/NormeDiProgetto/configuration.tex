@@ -39,6 +39,9 @@ pdfborder = {0 0 0}
 \fancyfoot{}
 \cfoot{\textcolor{footer-gray}{Pagina \thepage  \hspace{1pt} di \pageref*{LastPage}} }
 \renewcommand*\contentsname{Indice}
+\setcounter{tocdepth}{5}	%aggiunge paragrafi e sottoparagrafi all'indice
+\setcounter{secnumdepth}{5}	%aggiunge numero indicizazzione a paragrafi e sottoparagrafi
+
 
 \begin{document}
 \input{section/01_frontespizio.tex}

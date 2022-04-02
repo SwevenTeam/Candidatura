@@ -50,15 +50,15 @@ professori committenti e l'azienda proponente. \newline
     \item \textbf{Piano di Qualifica}
 \end{itemize}
 
-\subsubsection{Template per tutti i documenti}
-In questa sezione verranno illustrate le parti comuni a tutti i documenti, 
-eventuali parti aggiuntive specifiche per una tipologia di documenti
-verrà spiegata nella sezione dedicata a quella tipologia. \newline
-Si è deciso che tutti i documenti vengono suddivisi in varie sezioni 
-e ad ognuna corrisponde un file così da rendere più agevole l'aggiornamento 
-e la revisione dei file, oltre a garantire la possibilità di 
-lavorare in contemporanea in maniera asincrona allo stesso file 
-(è sufficiente lavorare in sezioni diverse).
+\subsubsection{Documenti e template}
+La prima sottosezione illustra il template comune a tutti i documenti.\\
+Nelle sottosezioni successive, una per ogni documento, è scritto lo scopo 
+del documento ed eventuali particolarità di template.
+\paragraph{Template comune a tutti i documenti}
+Tutti i documenti vengono suddivisi in varie sezioni e ad ognuna corrisponde 
+un file così da rendere più agevole l'aggiornamento e la revisione dei file, 
+oltre a garantire la possibilità di lavorare in contemporanea in maniera 
+asincrona allo stesso file (è sufficiente lavorare in sezioni diverse).
 
 \begin{enumerate}
     \item \textbf{configuration}
@@ -119,7 +119,7 @@ lavorare in contemporanea in maniera asincrona allo stesso file
             Mentre nel piè di pagina viene riportato il numero della pagina rispetto alle pagine totali.
 \end{enumerate}
 
-\subsubsection{Verbali}
+\paragraph{Verbali}
 Nei verbali di diverso rispetto a quanto scritto sopra nella sezione 3.1.5 
 sono presenti altri due file di template: "informazioni" e "conclusioni-decisioni", 
 quindi l'ordine delle varie parti sarà il seguente:
@@ -150,3 +150,87 @@ riportata solo nel nuovo verbale. Quindi i codici di versionamento sono sempre 0
 per l'amministratore nel ruolo di redattore, 0.1.0 superata la verifica e infine 1.0.0 
 dopo che è stato approvato. Dopo l'approvazione il verbale verrà ufficialmente pubblicato 
 e non si potrà più modificare.
+
+\paragraph{Glossario}
+Il glossario è un documento che ha lo scopo di spiegare il significato di alcuni termini usati 
+all'interno degli altri documenti, così da facilitare la comprensione di essi. \newline
+Il glossario non prevede la sezione di introduzione e non necessita di altri file aggiuntivi, si 
+è deciso che si userà l'ordine alfabetico così da facilitarne la ricerca, nell'indice compariranno 
+tutte le parole presenti nel documento. Ogni lettera dell'alfabeto costituirà una nuova 
+sezione e ogni parola avrà la sua sottosezione con scritto il significato. \newline
+Quando nei documenti si usa una parola e si vuole rimandare al glossario per la spiegazione 
+avrà la G al pedice, ciò si inserisce usando il comando \textbackslash glossario. 
+Per praticità e averne lo stile già impostato, questo comando è stato definito nel file 
+configuration la scrittura in corsivo del termine e l'aggiunta del pedice.
+
+\paragraph{Norme di Progetto}
+Le norme di progetto, cioè questo documento, ha lo scopo di redigere e riportare tutte le norme 
+e le decisioni del gruppo Sweven. Il documento sarà composto da tre grandi sezioni: \\
+processi primari, processi di supporto e processi organizzativi.
+
+\paragraph{Studio di Fattibilità}
+Lo studio di fattibilità è un documento scritto durante la scelta del capitolato per l'appalto con 
+lo scopo di analizzare ogni capitolato rimasto scrivendo pregi, difetti e le criticità rilevate dai 
+membri del gruppo.
+
+\paragraph{Candidatura}
+La candidatura è il documento ufficiale mediante il quale il gruppo si candida alla gara d'appalto 
+per l'assegnazione del capitolato, dichiarando anche il preventivo dei costi e della data di consegna.
+
+\paragraph{Analisi dei Requisiti}
+
+\paragraph{Piano di Progetto}
+
+\paragraph{Piano di Qualifica}
+
+
+\subsubsection{Convenzioni tipografiche}
+In questa parte si riportano le varie convenzioni per i documenti decise all'interno del gruppo.
+\paragraph{Nome del file}
+I documenti pdf vanno nominati con il nome del documento iniziando con la lettera maiuscola 
+e ogni nuova parola inizia con la lettera maiuscola (comprese le proposizioni). Per i verbali in 
+aggiunta va scritta anche la data all'americana usando i trattini e un trattino stacca la data 
+dal nome; esempi: NormeDiProgetto, VerbaleInterno-2022-03-31
+
+\paragraph{Stile del testo}
+\begin{itemize}
+        \item \textbf{Normale 12 pt} in generale tutto il testo dei documenti
+        \item \textbf{Grassetto} tutti i titoli che si differenziano per la grandezza automatica di \LaTeX
+        \item \textbf{Corsivo} i riferimenti ad altri documenti, alle parole del glossario
+        \item \textbf{Elenchi} gli elementi dell'elenco vanno in grassetto solo se è prevista una descrizione. \\
+                                Nel caso di elenchi annidati, non si usa più il grassetto.
+\end{itemize}
+
+\paragraph{Scrittura della data e dell'ora}
+La data va sempre scritta nel formato americano aaaa-mm-gg. \\
+Per l'ora si usa il formato a 24 ore hh:mm.
+
+\paragraph{Sigle}
+\begin{itemize}
+        \item \textbf{Nomi dei documenti}
+                \begin{itemize}
+                        \item VI: Verbale interno
+                        \item VE: Verbale esterno
+                        \item G: Glossario
+                        \item NdP: Norme di progetto
+                        \item AdR: Analisi dei requisiti
+                        \item PdP: Piano di progetto
+                        \item PdQ: Piano di qualifica
+                        \item MU: Manuale utente
+                \end{itemize}
+        \item \textbf{Revisioni di avanzamento}
+                \begin{itemize}
+                        \item RTB: Requirements and Technology Baseline
+                        \item PB: Product Baseline
+                        \item CA: Customer Acceptance
+                \end{itemize}
+        \item \textbf{Ruoli}
+                \begin{itemize}
+                        \item Re: Responsabile
+                        \item Am: Amministratore
+                        \item An: Analista
+                        \item Pt: Progettista
+                        \item Pg: Programmatore
+                        \item Ve: Verificatore
+                \end{itemize}
+\end{itemize}
